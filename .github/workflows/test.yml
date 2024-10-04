@@ -1,0 +1,13 @@
+name: 'HTTP tests'
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  tests:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker run --rm -i -t -v .:/workdir jetbrains/intellij-http-client   -L VERBOSE   -e development  -v http-client.env.json  req.http

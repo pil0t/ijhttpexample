@@ -1,0 +1,7 @@
+GET http://{{host}}/api/json/get?id={{id-value}}
+Authorization: Basic {{username}} {{password}}
+Content-Type: application/json
+
+{
+    "key": "{{my-var}}"
+}
