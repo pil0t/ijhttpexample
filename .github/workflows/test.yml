@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - run: docker run --rm -i -t -v .:/workdir jetbrains/intellij-http-client   -L VERBOSE   -e development  -v http-client.env.json  req.http
+      - run: docker run --rm -i -v .:/workdir jetbrains/intellij-http-client -L VERBOSE -e development -v http-client.env.json req.http
