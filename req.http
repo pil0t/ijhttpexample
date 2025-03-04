@@ -1,4 +1,4 @@
-GET http://{{host}}/api/json/get?id={{id-value}}
+OPTIONS http://{{host}}/api
 Authorization: Basic {{username}} {{password}}
 Content-Type: application/json
 
@@ -6,3 +6,7 @@ Content-Type: application/json
     "key": "{{my-var}}",
     "k2":"v2"
 }
+
+> {%
+    client.global.set("password", "Password1!")
+%}
