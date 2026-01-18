@@ -6,3 +6,4 @@ Content-Type: application/json
     "key": "{{my-var}}",
     "k2":"v2"
 }
+test
